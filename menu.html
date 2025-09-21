@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Niyantri Coffee - Menu</title>
+  <meta name='description' content='Menu for Niyantri Coffee: artisan coffees, teas, and snacks crafted for students on the go.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    Tailwind.config = { theme: { extend: { fontFamily: { serif: ['Playfair Display','serif'], sans: ['Inter','ui-sans-serif'] } } } }
+  </script>
+</head>
+<body class='min-h-screen bg-amber-50 text-stone-900 transition-all duration-700 opacity-0'>
+  <header class='bg-white/70 backdrop-blur-md shadow-sm'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <nav class='flex items-center justify-between h-16'>
+        <a href='index.html' class='text-2xl font-serif font-semibold text-amber-900'>Niyantri Coffee</a>
+        <ul class='hidden md:flex space-x-6 text-sm'>
+          <li><a href='index.html' class='hover:underline transition-all duration-300'>Home</a></li>
+          <li><a href='about.html' class='hover:underline transition-all duration-300'>About</a></li>
+          <li><a href='menu.html' class='hover:underline transition-all duration-300'>Menu</a></li>
+          <li><a href='contact.html' class='hover:underline transition-all duration-300'>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class='relative min-h-screen flex items-center justify-center'>
+    <img src="https://images.unsplash.com/photo-1497616657202-b03db964b01d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxiYXJpc3RhJTIwcHJlcGFyaW5nJTIwYSUyMGxhdHRlfGVufDB8MHx8fDE3NTg0NjYxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Menu hero' class='absolute inset-0 w-full h-full object-cover' />
+    <div class='absolute inset-0 bg-gradient-to-r from-amber-900/60 to-amber-600/40 mix-blend-multiply'></div>
+    <div class='relative z-10 text-center px-6 max-w-2xl text-white'>
+      <h1 class='text-4xl font-serif'>Menu & Ordering</h1>
+      <p class='mt-2 text-lg'>Choose your favorites and place an order for pickup or delivery.</p>
+    </div>
+  </section>
+
+  <!-- Menu Items -->
+  <section class='py-12'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <!-- Espresso & Coffee -->
+        <div class='bg-white rounded-lg p-4 shadow hover:shadow-xl transition-all duration-300'>
+          <img src='https://images.unsplash.com/photo-1508088405209-fbd63b6a4f50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxlc3ByZXNzbyUyMGN1cHxlbnwwfDB8fHwxNzU4NDY2MTI3fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Espresso' class='w-full h-40 object-cover rounded mb-3'>
+          <div class='flex items-center justify-between'>
+            <div>
+              <div class='font-semibold'>Espresso</div>
+              <div class='text-sm text-gray-500'>Bold, rich, single-origin</div>
+            </div>
+            <span class='font-semibold'>$3.00</span>
+          </div>
+          <button class='w-full mt-3 bg-amber-600 text-white py-2 rounded transition-all duration-300 hover:scale-105'>Add</button>
+        </div>
+        <div class='bg-white rounded-lg p-4 shadow hover:shadow-xl transition-all duration-300'>
+          <img src='https://images.pexels.com/photos/437716/pexels-photo-437716.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Latte' class='w-full h-40 object-cover rounded mb-3'>
+          <div class='flex items-center justify-between'>
+            <div>
+              <div class='font-semibold'>Cafe Latte</div>
+              <div class='text-sm text-gray-500'>Silky milk, classic crema</div>
+            </div>
+            <span class='font-semibold'>$4.00</span>
+          </div>
+          <button class='w-full mt-3 bg-amber-600 text-white py-2 rounded transition-all duration-300 hover:scale-105'>Add</button>
+        </div>
+        <div class='bg-white rounded-lg p-4 shadow hover:shadow-xl transition-all duration-300'>
+          <img src='https://images.unsplash.com/photo-1537188531050-d32d2ae14865?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxjaGFpJTIwbGF0dGV8ZW58MHwwfHx8MTc1ODQ2NjEzMHww&ixlib=rb-4.1.0&q=80&w=1080' alt='Chai Latte' class='w-full h-40 object-cover rounded mb-3'>
+          <div class='flex items-center justify-between'>
+            <div>
+              <div class='font-semibold'>Chai Latte</div>
+              <div class='text-sm text-gray-500'>Spiced tea with milk</div>
+            </div>
+            <span class='font-semibold'>$3.75</span>
+          </div>
+          <button class='w-full mt-3 bg-amber-600 text-white py-2 rounded transition-all duration-300 hover:scale-105'>Add</button>
+        </div>
+      </div>
+      <div class='mt-6 text-center'>
+        <a href='index.html' class='inline-block bg-amber-600 text-white px-4 py-2 rounded-full shadow hover:scale-105 transition-all duration-300'>Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class='bg-black text-white'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='font-semibold mb-2'>Niyantri Coffee</h3>
+        <p class='text-sm text-gray-300'>Student-friendly ordering with artisan coffee vibes.</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Links</h4>
+        <ul class='space-y-2 text-sm'>
+          <li><a href='index.html' class='text-gray-300 hover:text-white transition-all duration-300'>Home</a></li>
+          <li><a href='about.html' class='text-gray-300 hover:text-white transition-all duration-300'>About</a></li>
+          <li><a href='menu.html' class='text-gray-300 hover:text-white transition-all duration-300'>Menu</a></li>
+          <li><a href='contact.html' class='text-gray-300 hover:text-white transition-all duration-300'>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Newsletter</h4>
+        <form class='flex flex-col sm:flex-row gap-2'>
+          <input aria-label='Email address' type='email' placeholder='Email' class='flex-1 px-3 py-2 rounded bg-white text-black'>
+          <button class='bg-amber-600 px-4 py-2 rounded text-white hover:bg-amber-500 transition-all duration-300'>Subscribe</button>
+        </form>
+        <p class='text-xs text-gray-400 mt-2'>No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <hr class='border-gray-700'>
+    <p class='text-center text-gray-400 pb-4'>© 2025 Niyantri Coffee. All rights reserved. Location: Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    // Simple nav toggle (no mobile menu per this page layout)
+    window.addEventListener('load', () => document.body.classList.remove('opacity-0'));
+    // Page load reveal
+    const sections = document.querySelectorAll('section');
+    const ro = new IntersectionObserver((entries, obs) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.remove('opacity-0','translate-y-8'); e.target.classList.add('opacity-100','translate-y-0'); obs.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    sections.forEach(sec => { sec.classList.add('opacity-0','translate-y-8'); ro.observe(sec); });
+  </script>
+</body>
+</html>
