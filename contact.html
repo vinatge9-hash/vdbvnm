@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Niyantri Coffee - Contact</title>
+  <meta name='description' content='Get in touch with Niyantri Coffee. Find our location in Hyderabad, Telangana, India, and reach out with questions or collaboration ideas.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    Tailwind.config = { theme: { extend: { fontFamily: { serif: ['Playfair Display','serif'], sans: ['Inter','ui-sans-serif'] } } } }
+  </script>
+</head>
+<body class='min-h-screen bg-amber-50 text-stone-900 transition-all duration-700 opacity-0'>
+  <header class='bg-white/70 backdrop-blur-md shadow-sm'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <nav class='flex items-center justify-between h-16'>
+        <a href='index.html' class='text-2xl font-serif font-semibold text-amber-900'>Niyantri Coffee</a>
+        <ul class='hidden md:flex space-x-6 text-sm'>
+          <li><a href='index.html' class='hover:underline transition-all duration-300'>Home</a></li>
+          <li><a href='about.html' class='hover:underline transition-all duration-300'>About</a></li>
+          <li><a href='menu.html' class='hover:underline transition-all duration-300'>Menu</a></li>
+          <li><a href='contact.html' class='hover:underline transition-all duration-300'>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class='relative min-h-screen flex items-center justify-center'>
+    <img src="https://images.unsplash.com/photo-1511526088318-f1a6d7646a05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxtYXAlMjBhbmQlMjBjb2ZmZWUlMjBpbWFnZXJ5fGVufDB8MHx8fDE3NTg0NjYxMzB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Contact hero' class='absolute inset-0 w-full h-full object-cover' />
+    <div class='absolute inset-0 bg-gradient-to-r from-amber-900/60 to-amber-600/40 mix-blend-multiply'></div>
+    <div class='relative z-10 text-center px-6 max-w-2xl text-white'>
+      <h1 class='text-4xl font-serif'>Contact & Location</h1>
+      <p class='mt-2'>We’d love to hear from you. Reach out for questions, events, or collaborations.</p>
+    </div>
+  </section>
+
+  <section class='py-12'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <div>
+        <h2 class='text-2xl font-serif mb-2'>Visit Us</h2>
+        <p class='text-gray-700'>Niyantri Coffee, Campus District, Hyderabad, Telangana, India</p>
+        <p class='text-gray-600 mt-2'>Phone: +91 12345 67890</p>
+        <p class='text-gray-600'>Email: hello@niyantricoffee.in</p>
+      </div>
+      <div>
+        <h2 class='text-2xl font-serif mb-2'>Hours</h2>
+        <ul class='text-gray-700'>
+          <li>Mon-Fri: 7:00 - 21:00</li>
+          <li>Sat-Sun: 8:00 - 22:00</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class='py-8'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='text-2xl font-serif mb-4'>Send a Message</h2>
+      <form class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <input aria-label='Your name' placeholder='Your name' class='px-3 py-2 rounded bg-white'>
+        <input aria-label='Email' placeholder='Email' class='px-3 py-2 rounded bg-white'>
+        <input aria-label='Subject' placeholder='Subject' class='col-span-2 px-3 py-2 rounded bg-white'>
+        <textarea aria-label='Message' placeholder='Message' class='col-span-2 px-3 py-2 rounded bg-white' rows='4'></textarea>
+      </form>
+      <div class='mt-4 text-right'>
+        <button class='bg-amber-600 text-white px-6 py-2 rounded transition-all duration-300 hover:scale-105'>Send</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class='bg-black text-white'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='font-semibold mb-2'>Niyantri Coffee</h3>
+        <p class='text-sm text-gray-300'>Warm, modern coffee shop in Hyderabad,India.</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Quick Links</h4>
+        <ul class='space-y-2 text-sm'>
+          <li><a href='index.html' class='text-gray-300 hover:text-white transition-all duration-300'>Home</a></li>
+          <li><a href='menu.html' class='text-gray-300 hover:text-white transition-all duration-300'>Menu</a></li>
+          <li><a href='about.html' class='text-gray-300 hover:text-white transition-all duration-300'>About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Newsletter</h4>
+        <form class='flex gap-2'>
+          <input aria-label='Email' placeholder='Email' class='flex-1 px-3 py-2 rounded bg-white'>
+          <button class='bg-amber-600 px-4 py-2 rounded text-white'>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr class='border-gray-700'>
+    <p class='text-center text-gray-400 py-4'>© 2025 Niyantri Coffee. All rights reserved. Location: Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    // Simple fade-in on load
+    window.addEventListener('load', () => document.body.classList.remove('opacity-0'));
+    // Reveal sections on scroll (for all sections)
+    const secs = document.querySelectorAll('section, footer, header');
+    const io = new IntersectionObserver((entries, ob) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.remove('opacity-0','translate-y-8'); e.target.classList.add('opacity-100','translate-y-0'); ob.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    secs.forEach(s => { s.classList.add('opacity-0','translate-y-8'); io.observe(s); });
+  </script>
+</body>
+</html>
