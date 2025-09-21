@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Niyantri Coffee - Our Story</title>
+  <meta name='description' content='Learn the story behind Niyantri Coffee, our artisan-inspired approach, and how we create a warm space for students.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    Tailwind.config = {
+      theme: { extend: { fontFamily: { serif: ['Playfair Display','serif'], sans: ['Inter','ui-sans-serif'] } } }
+    }
+  </script>
+</head>
+<body class='min-h-screen bg-amber-50 text-stone-900 transition-all duration-700 opacity-0'>
+  <!-- Header -->
+  <header class='bg-white/70 backdrop-blur-md shadow-sm'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <nav class='flex items-center justify-between h-16'>
+        <a href='index.html' class='text-2xl font-serif font-semibold text-amber-900'>Niyantri Coffee</a>
+        <ul class='hidden md:flex space-x-6 text-sm'>
+          <li><a href='index.html' class='hover:underline transition-all duration-300'>Home</a></li>
+          <li><a href='about.html' class='hover:underline transition-all duration-300'>About</a></li>
+          <li><a href='menu.html' class='hover:underline transition-all duration-300'>Menu</a></li>
+          <li><a href='contact.html' class='hover:underline transition-all duration-300'>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero - About Introduction -->
+  <section class='relative min-h-screen flex items-center justify-center'>
+    <img src="https://pixabay.com/get/g5f50ccaea784b4ade36fa748a357c7a2a5c7d629d0c4b3af4bcc3b815d92913e0f27a587a4882022df0b3eda13aeeec0f2321cf1555be2b8872bbc3aeccb41ed_640.jpg" alt='About hero coffee image' class='absolute inset-0 w-full h-full object-cover' />
+    <div class='absolute inset-0 bg-gradient-to-r from-amber-900/60 to-amber-600/40 mix-blend-multiply'></div>
+    <div class='relative z-10 text-center px-6 max-w-2xl text-white'>
+      <h1 class='text-4xl md:text-5xl font-serif font-semibold'>Our Coffee Story</h1>
+      <p class='mt-4 text-lg'>Rooted in artisan craft, we brew moments that feel like a warm welcome after a long lecture.</p>
+    </div>
+  </section>
+
+  <!-- Story Content -->
+  <section class='py-12'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
+      <div>
+        <h2 class='text-2xl font-serif mb-2'>Our Craft</h2>
+        <p class='text-gray-700'>Niyantri Coffee is inspired by artisan coffee culture—small-batch roasting, thoughtful sourcing, and a warm, human touch. We believe in a space where learning happens over a cup, where study breaks feel like a pause in a good book.</p>
+        <p class='text-gray-700 mt-4'>Every cup is crafted with care, using seasonal beans and carefully pitched roasts that bring out caramel, chocolate, and fruity notes. Our space is designed to feel like a cozy studio—quiet corners, soft lighting, and friendly baristas ready to help you order.</p>
+      </div>
+      <div>
+        <img src="https://pixabay.com/get/g4ce55bc1a3531dd699916a44f83bd2630a8e5f48e7524bdb310faa26c2bc667d8a515d9fb53f05c6383bcb91f29df103_640.jpg" alt='Roasting beans' class='w-full h-64 object-cover rounded shadow-md'>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA to Menu -->
+  <section class='py-8 bg-amber-50'>
+    <div class='text-center'>
+      <a href='menu.html' class='inline-block bg-amber-600 text-white px-6 py-3 rounded-full shadow hover:scale-105 transition-all duration-300'>Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='bg-black text-white'>
+    <div class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='font-semibold mb-2'>Niyantri Coffee</h3>
+        <p class='text-sm text-gray-300'>A warm, artisan-inspired space for students to study, sip, and connect.</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Links</h4>
+        <ul class='space-y-2 text-sm'>
+          <li><a href='index.html' class='text-gray-300 hover:text-white transition-all duration-300'>Home</a></li>
+          <li><a href='about.html' class='text-gray-300 hover:text-white transition-all duration-300'>About</a></li>
+          <li><a href='menu.html' class='text-gray-300 hover:text-white transition-all duration-300'>Menu</a></li>
+          <li><a href='contact.html' class='text-gray-300 hover:text-white transition-all duration-300'>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Newsletter</h4>
+        <form class='flex flex-col sm:flex-row gap-2'>
+          <input aria-label='Email address' type='email' placeholder='Email' class='flex-1 px-3 py-2 rounded bg-white text-black'>
+          <button class='bg-amber-600 px-4 py-2 rounded text-white hover:bg-amber-500 transition-all duration-300'>Subscribe</button>
+        </form>
+        <p class='text-xs text-gray-400 mt-2'>No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <hr class='border-gray-700'>
+    <p class='text-center text-gray-400 pb-4'>© 2025 Niyantri Coffee. All rights reserved. Location: Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    // Simple nav toggle for mobile
+    const btn = document.getElementById('menuBtn');
+    const mobile = document.getElementById('mobileMenu');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        mobile.classList.toggle('hidden');
+      });
+    }
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('section');
+    const obs = new IntersectionObserver((entries, o) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.remove('opacity-0','translate-y-8');
+          e.target.classList.add('opacity-100','translate-y-0');
+          o.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    sections.forEach(sec => { sec.classList.add('opacity-0','translate-y-8'); obs.observe(sec); });
+    window.addEventListener('load', () => { document.body.classList.remove('opacity-0'); });
+  </script>
+</body>
+</html>
